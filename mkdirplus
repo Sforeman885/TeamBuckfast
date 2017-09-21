@@ -1,0 +1,8 @@
+#!/bin/bash
+#create dir and file
+
+if [! $# - 2 && ! $# - 3 ]
+then
+echo "Please enter either a folder name or a folder and file name."
+exit 1
+fi
