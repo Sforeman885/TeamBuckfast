@@ -4,3 +4,5 @@ Second script creates n files where n is a command line argument
 If a file or folder already exists, the script must overwrite it. (Bonus if 
 you delete all files previously created) ie delete the directory first 
 Usage: ./create [n] 
+mkdirplus
+createfiles
