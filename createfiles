@@ -1,0 +1,35 @@
+#!/bin/bash
+#Create multiple files at once
+
+#error and use case handling
+if [ ! $# -eq 1 ]
+then
+ echo "Usage: ./createfiles [n]"
+ exit 1
+fi
+
+#remove all previous files if they exist
+if [ -d files ]
+then
+ rm -rf files
+fi
+
+#create file directory
+mkdir files
+
+#create files with incrementing names
+for ((i=0;i<$1;i++));
+  do
+  touch files/file$i.txt
+ done
+
+#success
+if [ $1 == 1 ]
+then
+ echo "1 file created!"
+else
+ echo $1" files created!"
+fi
+exit 0
+
+
