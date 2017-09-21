@@ -13,8 +13,8 @@ echo $1" already exists as a directory"
 exit 2
 fi
 
-mkdir $1
-touch $1/$2.txt
-echo "Matthew doesn't like pizza" > $1/$2.txt
+mkdir team/folders/$1
+touch team/folders/$1/$2.txt
+echo "Matthew doesn't like pizza" > team/folders/$1/$2.txt
 echo "Folder and file successfully added"
 exit 0
