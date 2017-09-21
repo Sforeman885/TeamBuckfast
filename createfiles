@@ -1,0 +1,9 @@
+#!/bin/bash
+#Create multiple files at once
+
+#error and use case handling
+if [ ! $# -eq 1 ]
+then
+ echo "Usage: ./createfiles [n]"
+ exit 1
+fi
